@@ -79,7 +79,7 @@ async function terminateEc2Instance() {
   const ec2 = new EC2Client();
 
   const params = {
-    InstanceIds: InstanceIds: config.input.ec2InstanceIds,
+    InstanceIds: config.input.ec2InstanceIds,
   };
 
   try {
