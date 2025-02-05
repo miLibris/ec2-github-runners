@@ -9,7 +9,7 @@ function setOutput(label, ec2InstanceIds) {
 }
 
 async function start() {
-  const label = config.generateUniqueLabel();
+  const label = config.input.label;
   const githubRegistrationToken = await gh.getRegistrationToken();
   const ec2InstanceIds = await aws.startEc2Instance(label, githubRegistrationToken);
   setOutput(label, ec2InstanceIds);
