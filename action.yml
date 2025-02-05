@@ -94,4 +94,4 @@ outputs:
       The ids are used to terminate the EC2 instances when the runners are not needed anymore.
 runs:
   using: node20
-  main: ./src/index.js
+  main: ./dist/index.js
