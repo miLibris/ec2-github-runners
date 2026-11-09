@@ -96,5 +96,5 @@ outputs:
       EC2 Instance Ids of the created runners.
       The ids are used to terminate the EC2 instances when the runners are not needed anymore.
 runs:
-  using: node20
+  using: node24
   main: ./dist/index.js
